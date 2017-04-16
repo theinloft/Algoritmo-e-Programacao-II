@@ -29,9 +29,9 @@ public class App {
 							String cpf =  Console.readLine("Digite o Cpf do cliente:");
 							conta = new ContaBancaria();
 							
-									cliente = new Cliente(nome,cpf,conta); 
+									cliente = new Cliente(cpf, nome,conta); 
 									Console.println("**********************************");
-									Console.println("Conta Bancária criada nº:",conta.getNumero());
+									Console.println("Conta BancÃ¡ria criada nÂº:",conta.getNumero());
 									Console.println("Titular:", cliente.getNome());
 									Console.println("CPF:", cliente.getCpf());
 									Console.println("**********************************");
@@ -46,7 +46,7 @@ public class App {
 											
 											subopc = Console.readInt();
 														if(subopc == 1){
-													Console.println("insira o valor à ser depositado R$:");
+													Console.println("insira o valor Ã  ser depositado R$:");
 													double valor = Console.readDouble();
 															if(valor >0){
 																	conta.deposito(valor);
@@ -55,7 +55,7 @@ public class App {
 																	break;
 																		}
 															else{
-																	Console.print("valor inválido.");
+																	Console.print("valor invÃ¡lido.");
 																	break;
 											     				}
 														}
@@ -74,7 +74,7 @@ public class App {
 								case 2:{
 					
 				
-											int numConta = Console.readInt("Digite o nº da conta:");
+											int numConta = Console.readInt("Digite o nÂº da conta:");
 													
 													if(numConta == conta.getNumero()){
 															Console.println("Conta:", conta.getNumero());
