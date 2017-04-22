@@ -10,10 +10,11 @@ public class App {
 			String dataNascimento = Console.readString("Digite sua data de nascimento(Formato AAAA-MM-DD):");
 			
 			pessoa = new Pessoa(nome,dataNascimento);
-			
+			Console.print("********************************\n");
 			Console.println("Seu nome:",pessoa.getNome());
 			pessoa.obterIdade();
-		
+			pessoa.obterSigno();
+			Console.print("********************************");
 	}
 
 }
