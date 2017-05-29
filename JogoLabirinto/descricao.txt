@@ -1,0 +1,37 @@
+Jogo do Labirinto
+
+Você deve desenvolver, utilizando a linguagem Java e o framework SimpleJava, um jogo onde o objetivo do personagem principal é conseguir escapar de um labirinto. A interação com o usuário deve ser realizada utilizando o mouse e o modo gráfico.
+
+O labirinto é compostos por salas que estão conectadas por portas, sendo que estas portas podem possuir cadeados que só podem ser abertas pelas chaves corretas. As chaves e cadeados são identificados pelas cores Vermelho, Amarelo, Azul e Verde.
+
+As portas podem conter armadilhas, e uma vez que o personagem tente
+atravessar uma porta que contem uma armadilha, sem desarmá-la antes, será instantaneamente morto.
+
+No labirinto, haverão inimigos que guardam algumas das portas, o personagem não pode atravessar uma porta se houver um inimigo na sua frente.
+
+Os inimigos podem ser mortos através de um combate. Durante o combate, existe uma chance de o personagem ou o inimigo acertarem golpes, e nesse caso, haverá um dano de energia em quem for golpeado. Se a energia de um dos combatentes chegar a "zero", este será considerado morto.
+
+O personagem do jogador tem 75% de chance de acertar um golpe em um inimigo, e este golpe causa a perda de 2 pontos de energia. Ao utilizar items que o personagem pode recolher ao longo do jogo, as chances do jogador acertar um golpe, ou causar mais dano são alteradas. As seguintes armas podem ser encontradas no jogo:
+
+- Adaga: 75% de chance de acerto, adiciona 1 de dano;
+- Faca: 80% de chance de acerto, adiciona 2 pontos de dano;
+- Espada: 85% de chance de acerto, adiciona 3 pontos de dano;
+- Espada Longa: 65% de chance de acerto, adiciona 5 pontos de dano.
+
+O personagem do jogador inicia a partida com 20 pontos de energia.
+
+Os inimigos que podem ser encontrados no labirinto são os seguintes:
+
+- Goblin: 80% de chance de acerto, causa 2 pontos de dano.
+- Orc: 75% de chance de acerto, causa 4 pontos de dano.
+- Troll: 50% de chance de acerto, causa 6 pontos de dano.
+
+Caso o inimigo possua uma arma, o valor do dano causado é duplicado.
+
+Para resistir aos pontos de dano, o jogador pode possuir um escudo, que reduz em 25% a chance de acerto do inimigo (sobre o total, logo, um Goblin, contra um escudo tem apenas 55% de chance de acerto), ou o jogador pode possuir uma armadura, que não impedirá o golpe, mas impedirá seus efeitos, a Armadura de Couro evita 2 pontos de dano, a Armadura de Metal evita 3 pontos de dano, e a Armadura de Mithril evita 5 pontos de dano.
+
+Durante um combate, o jogador irá atacar primeiro. Se sobreviver, o inimigo irá contra-atacar. Todo combate possui apenas um turno, após o combate o jogador pode escolher entre combater novamente ou executar outra ação.
+
+Só é permitido ao jogador carregar dois itens, sendo que escudo, chaves e armas são itens que podem ser carregados.
+
+No início do sistema, o "mapa" do labirinto deve ser carregado a partir de um arquivo texto, a cada jogo, os items, inimigos, cadeados, e a posição inicial do personagem devem ser definidas aleatoriamente.
