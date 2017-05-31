@@ -16,6 +16,35 @@ public Personagem(String nome,Arma arma, Chave chave) {
 
 public void golpear(){
 	
+	if(arma.name()!= null){
+		switch (arma) {
+		case Adaga:
+			
+			int valor = (int) (Math.random() * 101);
+			
+			if(valor<=75){
+				//acertou o golpe com adaga
+				
+			}
+			else{
+				//errou o golpe com adaga
+			}
+		case Faca:
+			valor = (int) (Math.random() * 101);
+			
+			if(valor <=80){
+				//acertou o golpe com faca
+			}
+			else{
+				//errou o golpe com faca
+			}
+			
+			break;
+
+		default:
+			break;
+		}
+	}
 }
 
 

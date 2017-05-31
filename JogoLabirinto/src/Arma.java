@@ -8,6 +8,10 @@ public enum Arma {
 	private Arma(int dano){
 		this.dano = dano;
 	}
+
+	public int getDano() {
+		return dano;
+	}
 	
 	
 }
