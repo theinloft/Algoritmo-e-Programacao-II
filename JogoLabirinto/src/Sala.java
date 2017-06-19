@@ -1,3 +1,4 @@
+import java.io.*;
 import com.senac.SimpleJava.Graphics.Image;
 
 public class Sala {
@@ -14,7 +15,7 @@ public class Sala {
 		try {
 			this.backgrd = new Image("Imagens/cenario.png");
 		} catch (Exception e) {
-			
+		e.printStackTrace();	
 		}
 		
 	}
