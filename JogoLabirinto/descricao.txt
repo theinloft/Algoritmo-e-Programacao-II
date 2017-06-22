@@ -2,10 +2,10 @@ Jogo do Labirinto
 
 Você deve desenvolver, utilizando a linguagem Java e o framework SimpleJava, um jogo onde o objetivo do personagem principal é conseguir escapar de um labirinto. A interação com o usuário deve ser realizada utilizando o mouse e o modo gráfico.
 
-O labirinto é compostos por salas que estão conectadas por portas, sendo que estas portas podem possuir cadeados que só podem ser abertas pelas chaves corretas. As chaves e cadeados são identificados pelas cores Vermelho, Amarelo, Azul e Verde.
+O labirinto s�o compostos por salas que est�o conectadas por portas, sendo que estas portas podem possuir cadeados que só podem ser abertas pelas chaves corretas. As chaves e cadeados são identificados pelas cores Vermelho, Amarelo, Azul e Verde.
 
 As portas podem conter armadilhas, e uma vez que o personagem tente
-atravessar uma porta que contem uma armadilha, sem desarmá-la antes, será instantaneamente morto.
+atravessar uma porta que contem uma armadilha, sem desarma-la antes, será instantaneamente morto.
 
 No labirinto, haverão inimigos que guardam algumas das portas, o personagem não pode atravessar uma porta se houver um inimigo na sua frente.
 

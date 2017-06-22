@@ -14,7 +14,8 @@ public Personagem(String nome,Arma arma, Chave chave) {
 }
 
 
-public void golpear(){
+public int golpear(){
+	int dano = 0;
 	
 	if(arma.name()!= null){
 		switch (arma) {
@@ -24,27 +25,42 @@ public void golpear(){
 			
 			if(valor<=75){
 				//acertou o golpe com adaga
+				return dano = Arma.Adaga.getDano();
 				
 			}
 			else{
-				//errou o golpe com adaga
+				return 0;
 			}
 		case Faca:
 			valor = (int) (Math.random() * 101);
 			
 			if(valor <=80){
 				//acertou o golpe com faca
+				return dano = Arma.Faca.getDano();
 			}
 			else{
 				//errou o golpe com faca
+				return 0;
 			}
 			
-			break;
+		case Espada:
+			valor = (int) (Math.random() * 101);
+			if(valor <=85){
+				return dano = Arma.Espada.getDano();
+			}
+			
+		case EspadaLonga:	
+			valor = (int) (Math.random() * 101);
+			if(valor <=65){
+				return dano = Arma.EspadaLonga.getDano();
+			}
 
 		default:
 			break;
 		}
 	}
+	return dano;
+	
 }
 
 
