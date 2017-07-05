@@ -1,6 +1,7 @@
 public class ListaEncadeada<T> {
 	private No head;
 	private No tail;
+	private No dado;
     
 	/* Insere o objeto no fim da lista. */
     public void append(Object o){
@@ -45,7 +46,7 @@ public class ListaEncadeada<T> {
     }
     /* Testa se o objeto existe na lista. */
     public boolean hasObject(Object o){
-		return false;
+		return dado.getData() != null;
     	
     }
 }
